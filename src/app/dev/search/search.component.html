@@ -1,0 +1,16 @@
+<div class="input-group">
+  <div class="input-group-prepend">
+    Search&nbsp;&nbsp;&nbsp;&nbsp;<input [(ngModel)]="searchTerm" (keyup)="terms$.next($event.target.value)" style="border: 1px solid">
+  </div>
+  <div class="input-group-prepend">
+    <ul>
+      <li *ngFor="let item of items | slice:0:9">
+        {{ item.name }}
+      </li>
+    </ul>
+  </div>
+
+</div>
+
+<app-toggle [on]="true" (toggled)="showMessage($event)">
+</app-toggle>

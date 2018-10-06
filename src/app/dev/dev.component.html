@@ -1,0 +1,13 @@
+<nav>
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo">Logo</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a [routerLink]="['/dev']" routerLinkActive="active">Search</a></li>
+            <li><a [routerLink]="['/dev/redux']" routerLinkActive="redux">Redux</a></li>
+            <li><a [routerLink]="['/dev/reactivex']" routerLinkActive="reactivex">Reactive X</a></li>
+            <li><a [routerLink]="['/dev/angpro']" routerLinkActive="active">Ang Pro</a></li>
+            <li><a [routerLink]="['/dev/cssbootstrap']" routerLinkActive="active">Css Bootstrap</a></li>
+        </ul>
+    </div>
+</nav>
+<router-outlet></router-outlet>

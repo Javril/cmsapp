@@ -1,0 +1,8 @@
+{
+  "env": "local",
+  "envMap": {
+    "local": "assets/config/local.config.json",
+    "stage": "assets/config/stage.config.json",
+    "prod": "assets/config/prod.config.json"
+  }
+}

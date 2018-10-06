@@ -1,0 +1,7 @@
+<div>
+  <input type="text" name="reduxTutorial.name" [(ngModel)]="reduxTutorial.name">
+  <input type="text" name="reduxTutorial.url" [(ngModel)]="reduxTutorial.url">
+
+  <button class="btn-primary" (click)="updateTutorial(reduxTutorial.index, reduxTutorial.name, reduxTutorial.url)">Update
+    a Tutorial</button>
+</div>
